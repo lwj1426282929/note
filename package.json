@@ -1,0 +1,14 @@
+{
+  "name": "note",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-ribbon-animation": "^1.1.3"
+  }
+}
