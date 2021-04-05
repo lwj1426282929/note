@@ -1,9 +1,9 @@
 ---
 home: true
-heroText: Peng Blog
-tagline: 一个被程序员生涯耽误的优秀厨子
+heroText: LWJ's Blog
+tagline: 加油吧，少年
 heroTextStyle: { color: '#fff' }
-bgImage: '/gd01.jpg'
+bgImage: '/p81129.png'
 bgImageStyle: { height: '100vh', color: '#fff' }
 isShowTitleInHome: false
 ---
