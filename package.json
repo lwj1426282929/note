@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev .",
-    "build": "vuepress build ."
+    "build": "vuepress build views"
   },
   "devDependencies": {
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
