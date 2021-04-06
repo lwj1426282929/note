@@ -120,6 +120,7 @@ export default defineComponent({
       }, 100)
     },
     getPagesByTags (tagInfo) {
+      console.log(tagInfo)
       this.$router.push({ path: tagInfo.path })
     }
   }

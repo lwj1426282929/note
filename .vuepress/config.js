@@ -22,6 +22,13 @@ module.exports = {
       },
     },
   },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@assets': '/assets',
+      },
+    },
+  },
   markdown: {
     lineNumbers: true,
   },
