@@ -4,7 +4,7 @@ const plugins = require('./config/config.plugin')
 
 module.exports = {
   port: 80,
-  base: '/',
+  base: '/note/',
   head,
   serviceWorker: true, // 离线缓存（https）
   cache: true,
