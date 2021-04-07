@@ -73,7 +73,7 @@ module.exports = {
   ],
 
   /* 侧边栏 */
-  sidebar: 'auto',
+  sidebar: false,
 
   /* 友情链接 */
   friendLink: [

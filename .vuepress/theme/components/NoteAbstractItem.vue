@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue-demi'
+import { defineComponent, onMounted, toRefs } from 'vue-demi'
 import { RecoIcon } from '@vuepress-reco/core/lib/components'
 import PageInfo from './PageInfo'
 export default defineComponent({
@@ -27,6 +27,12 @@ export default defineComponent({
   setup (props, ctx) {
     const classList = ['draw', 'draw meet', 'center']
     const className = classList[Math.floor(Math.random() * 3)]
+    const { item } = toRefs(props)
+
+    onMounted(() => {
+      console.log(item)
+    })
+
     return { className }
   }
 })

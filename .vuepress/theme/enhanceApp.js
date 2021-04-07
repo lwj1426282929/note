@@ -21,5 +21,5 @@ export default ({
   }
 
   interceptRouterError(router)
-  fixRouterError404(router)
+  // fixRouterError404(router)
 }
