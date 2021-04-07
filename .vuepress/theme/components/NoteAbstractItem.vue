@@ -4,7 +4,7 @@
     @click="$router.push(item.path)">
     <reco-icon v-if="item.frontmatter.sticky" icon="reco-sticky" />
     <div v-if="item.frontmatter.bgImage" class="abstract-cover">
-      <img :src="item.frontmatter.bgImage">
+      <img :src="$withBase(item.frontmatter.bgImage)">
     </div>
     <div class="abstract-wrap">
       <div class="title">
@@ -18,13 +18,14 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue-demi'
+import { defineComponent, getCurrentInstance } from 'vue-demi'
 import { RecoIcon } from '@vuepress-reco/core/lib/components'
 import PageInfo from './PageInfo'
 export default defineComponent({
   components: { PageInfo, RecoIcon },
   props: ['item', 'currentPage', 'currentTag'],
   setup (props, ctx) {
+    // const instance = getCurrentInstance().proxy
     const classList = ['draw', 'draw meet', 'center']
     const className = classList[Math.floor(Math.random() * 3)]
 
