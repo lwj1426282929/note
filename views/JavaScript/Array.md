@@ -5,6 +5,7 @@ categories:
 - JavaScript
 tags:
 - JavaScript
+bgImage: '/p81129.png'
 ---
 
 ## 查找元素、判断是否包含某元素
