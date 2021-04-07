@@ -25,7 +25,6 @@ export default defineComponent({
   components: { PageInfo, RecoIcon },
   props: ['item', 'currentPage', 'currentTag'],
   setup (props, ctx) {
-    // const instance = getCurrentInstance().proxy
     const classList = ['draw', 'draw meet', 'center']
     const className = classList[Math.floor(Math.random() * 3)]
 

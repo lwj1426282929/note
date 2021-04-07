@@ -78,17 +78,17 @@ module.exports = {
   /* 友情链接 */
   friendLink: [
     {
-      title: 'Lucifer',
-      desc: 'Everything can be expected in the future.',
-      email: '2050180797@qq.com',
-      logo: 'https://nightliuguoxing-github-io.vercel.app/img/avatar.jpg',
-      link: 'https://love.liuguoxing.top',
+      title: 'vuepress-theme-reco',
+      desc: '一款简洁而优雅的 vuepress 博客 & 文档 主题。',
+      email: '',
+      logo: '',
+      link: 'https://vuepress-theme-reco.recoluan.com/',
     },
     {
-      title: '午后南杂',
-      desc: '一款简洁而优雅的 vuepress 博客 & 文档 主题。',
-      email: '无',
-      link: 'https://vuepress-theme-reco.recoluan.com/',
+      title: 'VuePress',
+      desc: 'Vue 驱动的静态网站生成器',
+      email: '',
+      link: 'https://vuepress.vuejs.org/zh/',
     },
   ],
 }
