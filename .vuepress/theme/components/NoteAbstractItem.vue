@@ -53,6 +53,16 @@ export default defineComponent({
     .abstract-cover img {
       transform: scale(1.5);
     }
+    .title {
+      a {
+        color: $accentColor;
+      }
+      &::after {
+        visibility visible
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    }
   }
   &::before, &::after {
     box-sizing: inherit;
@@ -111,12 +121,12 @@ export default defineComponent({
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
       transition: .3s ease-in-out;
-    &:hover a
-      color $accentColor
-    &:hover:after
-      visibility visible
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
+    // &:hover a
+    //   color $accentColor
+    // &:hover:after
+    //   visibility visible
+    //   -webkit-transform: scaleX(1);
+    //   transform: scaleX(1);
   .tags
     .tag-item
       &.active
