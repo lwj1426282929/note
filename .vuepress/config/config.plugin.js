@@ -1,5 +1,7 @@
+const demoCode = require('../plugins/demo-code')
+
 module.exports = [
-  /* 看板娘 */
+  // 看板娘
   [
     '@vuepress-reco/vuepress-plugin-kan-ban-niang',
     {
@@ -14,8 +16,8 @@ module.exports = [
       },
     },
   ],
-  
-  /* 彩带 */
+
+  // 彩带
   [
     'ribbon-animation',
     {
@@ -37,5 +39,23 @@ module.exports = [
       ribbonShow: false, //  点击彩带  true显示  false为不显示
       ribbonAnimationShow: true, // 滑动彩带
     },
-  ]
+  ],
+
+  // 复制代码
+  [
+    'one-click-copy',
+    {
+      copySelector: [
+        'div[class*="language-"] pre',
+        'div[class*="aside-code"] aside',
+        'div[class*="code-block__inner-code"]',
+        '.copy-container',
+      ],
+      copyMessage: '复制成功',
+      duration: 1000,
+    },
+  ],
+
+  // demo-code
+  [demoCode],
 ]
