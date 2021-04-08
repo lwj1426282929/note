@@ -1,6 +1,12 @@
 <template>
   <main class="page" :style="pageStyle">
     <ModuleTransition delay="0.08">
+      <section v-if="$frontmatter.bgImage" class="banner">
+        <img :src="$withBase($frontmatter.bgImage)">
+      </section>
+    </ModuleTransition>
+
+    <ModuleTransition delay="0.08">
       <section v-show="recoShowModule">
         <div class="page-title">
           <h1 class="title">{{$page.title}}</h1>
@@ -60,7 +66,7 @@
 </template>
 
 <script>
-import { defineComponent, computed, getCurrentInstance, toRefs } from 'vue-demi'
+import { defineComponent, computed, getCurrentInstance, toRefs, onMounted } from 'vue-demi'
 import PageInfo from '@theme/components/PageInfo'
 import { resolvePage, outboundRE, endingSlashRE } from '@theme/helpers/utils'
 import { ModuleTransition } from '@vuepress-reco/core/lib/components'
@@ -161,6 +167,12 @@ export default defineComponent({
       return instance.$showSubSideBar ? {} : { paddingRight: '0' }
     })
 
+    onMounted(() => {
+      window.addEventListener('scroll', (e) => {
+        console.log(e)
+      })
+    })
+
     return {
       recoShowModule,
       shouldShowComments,
@@ -241,16 +253,23 @@ function flatten (items, res) {
 
 .page
   position relative
-  padding-top 5rem
+  // padding-top 5rem
   padding-bottom 2rem
   padding-right 14rem
   display block
+  .banner
+    width 100vw
+    height 30rem
+    img
+      width 100%
+      height 100%
+      object-fit cover
   .side-bar
-    position fixed
-    top 10rem
-    bottom 10rem
-    right 2rem
-    overflow-y scroll
+    // position fixed
+    // top 10rem
+    // bottom 10rem
+    // right 2rem
+    // overflow-y scroll
     &::-webkit-scrollbar
       width: 0
       height: 0
