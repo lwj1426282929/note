@@ -3,6 +3,7 @@ title: Array 之常用方法
 date: 2021-04-05
 categories:
 - JavaScript
+- Array
 tags:
 - JavaScript
 bgImage: '/p81129.png'

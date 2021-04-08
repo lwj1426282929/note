@@ -1,4 +1,13 @@
-# Array 之遍历
+---
+title: Array 之遍历
+date: 2021-04-08
+categories:
+- JavaScript
+- Array
+tags:
+- JavaScript
+bgImage: '/p81129.png'
+---
 
 ## forEach
 
