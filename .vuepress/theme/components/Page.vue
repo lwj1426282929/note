@@ -259,17 +259,17 @@ function flatten (items, res) {
   display block
   .banner
     width 100vw
-    height 30rem
+    height 25rem
     img
       width 100%
       height 100%
       object-fit cover
   .side-bar
-    // position fixed
-    // top 10rem
-    // bottom 10rem
-    // right 2rem
-    // overflow-y scroll
+    position fixed
+    top 10rem
+    bottom 10rem
+    right 2rem
+    overflow-y scroll
     &::-webkit-scrollbar
       width: 0
       height: 0
