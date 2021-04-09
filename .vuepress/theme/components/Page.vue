@@ -1,5 +1,5 @@
 <template>
-  <main class="page" :style="pageStyle">
+  <main :class="{ page: true, 'pt-5': !$frontmatter.bgImage }" :style="pageStyle">
     <ModuleTransition delay="0.08">
       <section v-if="$frontmatter.bgImage" class="banner">
         <img :src="$withBase($frontmatter.bgImage)">
@@ -167,12 +167,6 @@ export default defineComponent({
       return instance.$showSubSideBar ? {} : { paddingRight: '0' }
     })
 
-    onMounted(() => {
-      window.addEventListener('scroll', (e) => {
-        console.log(e)
-      })
-    })
-
     return {
       recoShowModule,
       shouldShowComments,
@@ -253,10 +247,11 @@ function flatten (items, res) {
 
 .page
   position relative
-  // padding-top 5rem
   padding-bottom 2rem
   padding-right 14rem
   display block
+  &.pt-5
+    padding-top 5rem
   .banner
     width 100vw
     height 25rem

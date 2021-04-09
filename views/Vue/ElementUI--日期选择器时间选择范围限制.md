@@ -2,8 +2,6 @@
 sidebarDepth: 0
 ---
 
-# Element UI--日期选择器时间选择范围限制
-
 :::tip
 使用`picker-options`的`disabledDate`属性来限制可选择的日期。`disabledDate`接受一个函数，参数为日历中的每一个日期对象，通过与指定日期进行比较返回一个布尔值，true 代表禁用，不能选择。
 :::
