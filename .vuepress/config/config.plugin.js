@@ -1,9 +1,24 @@
 const demoCode = require('../plugins/demo-code')
+const kanBanNiang = require('../plugins/vuepress-plugin-kan-ban-niang')
 
 module.exports = [
   // 看板娘
+  // [
+  //   '@vuepress-reco/vuepress-plugin-kan-ban-niang',
+  //   {
+  //     theme: ['whiteCat'],
+  //     clean: true,
+  //     modelStyle: {
+  //       position: 'fixed',
+  //       right: '65px',
+  //       bottom: '0px',
+  //       zIndex: 99999,
+  //       pointerEvents: 'none',
+  //     },
+  //   },
+  // ],
   [
-    '@vuepress-reco/vuepress-plugin-kan-ban-niang',
+    kanBanNiang,
     {
       theme: ['whiteCat'],
       clean: true,
@@ -14,7 +29,7 @@ module.exports = [
         zIndex: 99999,
         pointerEvents: 'none',
       },
-    },
+    }
   ],
 
   // 彩带

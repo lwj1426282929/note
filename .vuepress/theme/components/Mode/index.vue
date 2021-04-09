@@ -67,6 +67,7 @@
           applyMode(mode)
           localStorage.setItem('mode', mode)
         }
+        this.$root.$emit('updateMode')
       },
     }
   }
